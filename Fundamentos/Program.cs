@@ -128,14 +128,6 @@ internal class Program
         elfo.Nivel = 1;
 
 
-        merlin.apresentarSe();
-        elfo.apresentarSe();
-
-        int ataque = merlin.atacar();
-        int defesa = merlin.Defender();
-        Console.WriteLine("Força do Ataque: " + ataque);
-        Console.WriteLine("Força do Defesa: " + defesa);
-
         Cavaleiro cavaleiro = new Cavaleiro();
 
         cavaleiro.Nome = " Jerson ";
