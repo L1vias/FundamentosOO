@@ -95,7 +95,7 @@ internal class Program
 
         //imprimindo a informação na tela
         Console.WriteLine(" O animal " + animal1.Especie + " emitiu um som.");*/
-
+        /*
         Gato gato = new Gato();
         gato.Nome = "Frajola";
         Console.WriteLine(gato.Nome + " faz: ");
@@ -109,7 +109,46 @@ internal class Program
         Galinha galinha = new Galinha();
         galinha.Nome = "neuza";
         Console.WriteLine(galinha.Nome + " faz: ");
-        galinha.emitirSom();
+        galinha.emitirSom();*/
+
+        Mago merlin = new Mago();
+        merlin.Nome = "Mago Merlin";
+        merlin.Vida = 100;
+        merlin.Inteligencia = 87;
+        merlin.Agilidade = 65;
+        merlin.Forca = 80;
+        merlin.Nivel = 1;
+
+        Elfo elfo = new Elfo();
+        elfo.Nome = "Julius";
+        elfo.Vida = 100;
+        elfo.Inteligencia = 83;
+        elfo.Forca = 56;
+        elfo.Agilidade = 90;
+        elfo.Nivel = 1;
+
+
+        merlin.apresentarSe();
+        elfo.apresentarSe();
+
+        int ataque = merlin.atacar();
+        int defesa = merlin.Defender();
+        Console.WriteLine("Força do Ataque: " + ataque);
+        Console.WriteLine("Força do Defesa: " + defesa);
+
+        Cavaleiro cavaleiro = new Cavaleiro();
+
+        cavaleiro.Nome = " Jerson ";
+        cavaleiro.Forca = 10;
+        cavaleiro.Vida = 100;
+        cavaleiro.Agilidade = 70;
+        cavaleiro.Inteligencia = 33;
+        cavaleiro.Nivel = 1;
+
+
+        merlin.apresentarSe();
+        cavaleiro.apresentarSe();
+        merlin.batalhar(cavaleiro);
 
 
     }
